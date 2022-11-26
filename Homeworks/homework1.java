@@ -18,3 +18,17 @@ class Solution {
         }
     }
 }
+
+// Task2
+http://joxi.ru/V2VJpv0iBjY9w2
+class Solution {
+    public int[] buildArray(int[] nums) {
+        
+        int[] an = new int[nums.length];
+        for (int i = 0; i < nums.length; ++i) {
+            an[i] = nums[nums[i]];
+
+        }
+        return an;
+    }
+}
