@@ -5,17 +5,16 @@ public class homework1 {
 }
 
 // Task1
-
+// http://joxi.ru/D2PkEyNTwLRGjm
 class Solution {
-    public int subtractProductAndSum(int n) {
-        int prod = 1;
-        int sum = 0;
-        while (n > 0) {
-            prod = prod * (n % 10);
-            sum += n % 10;
-
-            n /= 10;
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1, j = n - 1, k = m + n - 1;
+        while (j >= 0) {
+            if (i >= 0 && nums1[i] > nums2[j]) {
+                nums1[k--] = nums1[i--];
+            } else {
+                nums1[k--] = nums2[j--];
+            }
         }
-        return prod - sum;
     }
 }
