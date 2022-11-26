@@ -12,7 +12,8 @@ class Solution {
         while (j >= 0) {
             if (i >= 0 && nums1[i] > nums2[j]) {
                 nums1[k--] = nums1[i--];
-            } else {
+            } 
+            else {
                 nums1[k--] = nums2[j--];
             }
         }
@@ -20,7 +21,7 @@ class Solution {
 }
 
 // Task2
-http://joxi.ru/V2VJpv0iBjY9w2
+//http://joxi.ru/V2VJpv0iBjY9w2
 class Solution {
     public int[] buildArray(int[] nums) {
         
@@ -32,3 +33,20 @@ class Solution {
         return an;
     }
 }
+
+// Task3
+// http://joxi.ru/EA4G1b0iXVxLj2
+
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int cnt = 0, n = nums.length;
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] == val)
+                ++cnt;
+            else
+                nums[i - cnt] = nums[i];
+        }
+        return n - cnt;
+    }
+}
+
