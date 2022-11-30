@@ -93,3 +93,9 @@ class Solution {
         return true;
     }
 }
+
+http://joxi.ru/D2PkEyNTwLRGjm
+http://joxi.ru/V2VJpv0iBjY9w2
+http://joxi.ru/EA4G1b0iXVxLj2
+http://joxi.ru/a2XgDYjuQ6g01m
+http://joxi.ru/GrqDKB8czZxNDA
