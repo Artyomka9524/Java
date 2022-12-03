@@ -172,3 +172,7 @@ class Solution {
     }
 
 
+    http://joxi.ru/DmB54RKcq7a3ar
+    http://joxi.ru/krDW4kaIGDRVYA
+    http://joxi.ru/1A501JEH4M98N2
+    http://joxi.ru/l2ZGMYzilo0j0A
