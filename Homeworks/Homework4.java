@@ -106,3 +106,23 @@ class MyQueue {
  * int param_3 = obj.peek();
  * boolean param_4 = obj.empty();
  */
+
+//Task3
+//http://joxi.ru/52a9yeWUlj75V2
+
+class Solution {
+    public String simplifyPath(String path) {
+        Deque<String> stk = new ArrayDeque<>();
+        for (String s : path.split("/")) {
+            if ("".equals(s) || ".".equals(s)) {
+                continue;
+            }
+            if ("..".equals(s)) {
+                stk.pollLast();
+            } else {
+                stk.offerLast(s);
+            }
+        }
+        return "/" + String.join("/", stk);
+    }
+}
